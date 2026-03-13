@@ -8,13 +8,18 @@ This repository contains two small, aligned experiments exploring time‑series 
 
 The main differences between the two datasets are the number of relevant or usable features present in the F1 data that are not present in the Le Mans data, and the long continuous data series that comes from a 24‑hour race, which is not present in a 2‑hour race.
 
+[WEC Dataset (contains Le Mans 2021 and 2022)](https://www.kaggle.com/datasets/tristenterracciano/fia-wec-lap-data-20122022)
+
+[Fastf1 Dataset acquired via API](https://docs.fastf1.dev/index.html)
+
 ---
 
 ## Models Tested
 
 ### RNN Baselines
 - RNN layers (easily converted to LSTM or GRU layers) with Conv1D layers as an attempt to capture characteristics of the data's variance.
-- Common problems observed:  
+- Common problems observed: 
+ 
   - **Prediction collapse to mean**  
   - **Random walks**  
   - **Volatility in training**  
